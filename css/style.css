@@ -127,3 +127,113 @@ body{
     top: 77%;
     position: absolute;
 }
+.text-container-second {
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
+}
+.text-container-second h1{
+    font-size: 110px;
+    font-family: Kinetica;
+    color: white;
+}
+.photos-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.inside-images-container{
+    margin-top: -1.3%;
+}
+.image-1{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.image-1 img{
+    width: 800px;
+    height: 400px;
+    opacity: 45%;
+    position: absolute;
+
+}
+
+.image-2{
+    width: 800px;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 30px;
+
+}
+.image-2 img{
+    width: 800px;
+    height: 400px;
+    opacity: 45%;
+    position: absolute;
+}
+.image-3{
+    height: 830px;
+    width: 600px;
+    margin-left: 15%;
+
+}
+
+.image-3 img{
+    height: 830px;
+    width: 600px;
+    position: absolute;
+    opacity: 45%;
+    overflow:visible;
+}
+
+/* .image3 img::before{
+
+    content: "";
+    top: 0;
+    left: 0;
+
+
+} */
+.image-text-container h6{
+    color: white;
+    font-family: kinetica;
+    font-size: 50px;
+    opacity: 100%;
+    margin:0px;
+    text-decoration: underline;
+    text-underline-offset: 5%;
+}
+.image-text-container p {
+    color: white;
+    font-family: kinetica;
+    font-size: 20px;
+    margin-top: 0px;
+    text-shadow: -3px 3px black;
+}
+#image-1-heading{
+    transform: translate(25%,0%);
+}
+#image-1-paragraph{
+    transform: translate(25%,-0%);
+
+}
+#image-2-heading{
+    transform: translate(55%,-90%);
+    opacity: 100%;
+
+}
+#image-2-paragraph{
+    transform: translate(55%,-60%);
+    opacity: 100%;
+
+}
+
+#image-3-heading{
+    transform: translate(-10%,-90%);
+
+}
+#image-3-paragraph{
+    transform: translate(-10%,-60%);
+
+}
