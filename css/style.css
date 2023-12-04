@@ -127,6 +127,7 @@ body{
     top: 77%;
     position: absolute;
 }
+
 .text-container-second {
     margin-top: -1%;
     display: flex;
@@ -219,21 +220,38 @@ body{
 
 }
 #image-2-heading{
-    transform: translate(55%,-90%);
+    transform: translate(5%,180%);
     opacity: 100%;
 
 }
 #image-2-paragraph{
-    transform: translate(55%,-60%);
+    transform: translate(5%,140%);
     opacity: 100%;
+    width: 850px;
 
 }
 
 #image-3-heading{
-    transform: translate(-10%,-90%);
+    transform: translate(-60%,350%);
+    width: 750px;
 
 }
 #image-3-paragraph{
-    transform: translate(-10%,-60%);
+    transform: translate(-60%,290%);
+    width: 750px;
 
+}
+footer{
+    margin-top: 15%;
+}
+.footer-container{
+    width: 100%;
+    height: 115px;
+    background-color: #1e2024;
+    display: flex;
+    justify-content: center;
+}
+
+.img-class-footer{
+    width: 200px;
 }
