@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sign-up.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <div class="image-caption">
+          <h4>The Adventure Starts Here</h4>
+          <h5>Create an account to join the comunity</h5>
+        </div>
+
+        <img src="./images/sign-up-image.webp" alt="" />
+        <p>© 2023 by Atlas. All Rights reserved.</p>
+      </div>
+      <form action="./index.html" type="submit" class="right-container">
+        <div class="header-container">
+          <h1 class="header">Create Account</h1>
+        </div>
+
+        <div style="margin-top: 10%" class="double-input-container">
+          <input type="text" required name="name" placeholder="Name" />
+
+          <input type="text" name="surname" placeholder="Surname" />
+        </div>
+        <div class="double-input-container">
+          <input type="text" name="phone" placeholder="Phone" />
+
+          <input type="text" name="Country" placeholder="Country" />
+        </div>
+        <div class="double-input-container">
+          <input
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            name="birthday"
+            placeholder="Birthday"
+          />
+          <select id="gender" name="gender" placeholder="gender">
+            <option value="" disabled selected>Select your gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Other</option>
+          </select>
+        </div>
+        <div class="single-input-container">
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+        <div class="single-input-container">
+          <input type="password" name="password" placeholder="Password" />
+        </div>
+        <div class="button-container">
+          <input type="submit" value="Sign Up" />
+          <p>Already have an account? <span>Sign In</span></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

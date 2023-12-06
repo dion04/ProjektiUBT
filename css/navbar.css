@@ -69,3 +69,7 @@ header{
 .regular:hover{
     border-bottom: 2px solid white;
 }
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
