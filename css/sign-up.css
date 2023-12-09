@@ -246,3 +246,8 @@ footer{
 .img-class-footer{
     width: 200px;
 }
+header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
