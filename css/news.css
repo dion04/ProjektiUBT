@@ -87,3 +87,109 @@ body{
     border-bottom: solid 2px #2FCEE7;
     font-size: 20px;
 }
+
+.latest-container-divider{
+    height: 230px;
+    background-color: #2C3039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.latest-news{
+    width: 60%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.latest-news h1{
+    margin-top: 5px;
+}
+.latest-news-main-container{
+    display: flex;
+}
+.latest-news-left{
+    width: 75%;
+}
+.latest-news-right{
+    height: 100vh;
+    width: 25%;
+    margin-top: 5%;
+    border-left: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.news-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-container img{
+    width: 600px;
+    height: 85%;
+    
+}
+
+
+.text-news-container{
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    justify-content: center;
+}
+.text-news-container *{
+    margin: 10px 20px;
+    padding: 0;
+}
+.text-news-container p{
+    font-family: Roboto;
+    font-weight: 600;
+    color: #2FCEE7;
+    font-size: 15px;
+}
+.text-news-container h4{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+.text-news-container h5{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 100;
+    width: 450px;
+
+
+}
+.text-news-container h6{
+    font-family: Roboto;
+    font-size: 20px;
+
+}
+
+.latest-news-right img{
+    width: 90%;
+    height: 25%;
+}
+.latest-news-right img:hover{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 5%;
+}
+.footer-container{
+    width: 100%;
+    height: 115px;
+    background-color: #1e2024;
+    display: flex;
+    justify-content: center;
+}
+
+.img-class-footer{
+    width: 200px;
+}
