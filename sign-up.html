@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+
     <link rel="stylesheet" href="./css/sign-up.css" />
   </head>
   <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img class="img-class" src="./images/logo.png" alt="" />
+          <h4>ATLAS</h4>
+        </div>
+
+        <div class="nav-content">
+          <a href="./index.html"><h4 class="regular">Home</h4></a>
+          <a href="./news.html"><h4 class="regular">News</h4></a>
+          <h4 class="regular">Champions</h4>
+          <h4 class="regular">Shop</h4>
+          <a href="./sign-up.html"><h4 class="selected">Sign Up</h4></a>
+        </div>
+      </div>
+    </header>
     <div class="main-container">
       <div class="left-container">
         <div class="image-caption">
@@ -23,24 +41,50 @@
         </div>
 
         <div style="margin-top: 10%" class="double-input-container">
-          <input type="text" required name="name" placeholder="Name" />
+          <input
+            type="text"
+            id="name"
+            required
+            name="name"
+            placeholder="Name"
+          />
 
-          <input type="text" name="surname" placeholder="Surname" />
-        </div>
-        <div class="double-input-container">
-          <input type="text" name="phone" placeholder="Phone" />
-
-          <input type="text" name="Country" placeholder="Country" />
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            required
+            placeholder="Surname"
+          />
         </div>
         <div class="double-input-container">
           <input
+            required
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+          />
+
+          <input
+            type="text"
+            id="country"
+            name="Country"
+            required
+            placeholder="Country"
+          />
+        </div>
+        <div class="double-input-container">
+          <input
+            id="birthday"
             type="text"
             onfocus="(this.type='date')"
             onblur="(this.type='text')"
             name="birthday"
+            required
             placeholder="Birthday"
           />
-          <select id="gender" name="gender" placeholder="gender">
+          <select required id="gender" name="gender" placeholder="gender">
             <option value="" disabled selected>Select your gender</option>
             <option value="M">Male</option>
             <option value="F">Female</option>
@@ -48,16 +92,24 @@
           </select>
         </div>
         <div class="single-input-container">
-          <input type="email" name="email" placeholder="Email" />
+          <input required id="email" name="email" placeholder="Email" />
         </div>
         <div class="single-input-container">
-          <input type="password" name="password" placeholder="Password" />
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
         </div>
         <div class="button-container">
-          <input type="submit" value="Sign Up" />
+          <input type="submit" onclick="validateForm()" value="Sign Up" />
           <p>Already have an account? <span>Sign In</span></p>
         </div>
       </form>
     </div>
+
+    <script src="./js/sign-up.js"></script>
   </body>
 </html>
