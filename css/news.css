@@ -93,6 +93,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 99vw;
 }
 .latest-news{
     width: 60%;
