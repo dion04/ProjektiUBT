@@ -1,3 +1,5 @@
+let form = document.getElementById("form");
+
 const validateForm = () => {
   let name = document.getElementById("name").value;
   let surname = document.getElementById("surname").value;
@@ -9,7 +11,6 @@ const validateForm = () => {
   let currentDate = new Date().toJSON().slice(0, 10) + " 01:00:00";
 
   let age = ~~((Date.now(currentDate) - opBirthday) / 31557600000);
-  console.log(age);
 
   var nameRegex = /^[a-zA-Z\s]+$/;
   if (!nameRegex.test(name)) {
@@ -40,10 +41,20 @@ const validateForm = () => {
     return false;
   }
 
-  if (password.length < 6) {
-    alert("Password must be at least 6 characters!");
+  let passwordRegex = /^[A-Z][a-z]+[0-9]{3}/;
+  if (!passwordRegex.test(password)) {
+    alert(
+      "Password must be at least 8 characters, first element Uppercase and atleast three numbers!"
+    );
     return false;
   }
 
   return true;
 };
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (validateForm()) {
+    let host = window.location.host;
+    document.location.href = "/sign-in.html";
+  }
+});

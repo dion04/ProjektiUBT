@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #18524E;
+}
+.banner-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 2% !important;
+}
+.text-container{
+    height: 300px;
+    width: 80%;
+    border-bottom: 2px solid black;
+    margin-bottom: 2%;
+}
+.text-container h1{
+    font-family: Kinetica;
+    font-size: 90px;
+}
+.banner-container img{
+    width: 90%;
+}
+.main-container{
+    background-color: #18524E;
+}
+
+.champ-container{
+    display: flex;
+    width: 100%;
+    height: 470px;
+    background-color: white;
+    margin-top: 2%;
+}
+.champ-container img{
+    width: 40%;
+}
+.champ-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    justify-content: center;
+    
+}
+.champ-text-container p{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 22px;
+}
+.champ-desc-container{
+    width: 80%;
+    text-align: center;
+}
+
+.champ-text-container h1{
+    font-size: 55px;
+    margin: 0px;
+}
+.champ-text-container h2{
+    font-size: 30px;
+    margin: 0px;
+
+}
+
+footer{
+    margin-top: 
+    2%;
+}
+.footer-container{
+    width: 100%;
+    height: 115px;
+    background-color: #1e2024;
+    display: flex;
+    justify-content: center;
+}
+
+.img-class-footer{
+    width: 200px;
+}

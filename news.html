@@ -19,7 +19,8 @@
         <div class="nav-content">
           <a href="./index.html"><h4 class="regular">Home</h4></a>
           <h4 class="selected">News</h4>
-          <h4 class="regular">Champions</h4>
+          <a href="./champs.html"><h4 class="regular">Champions</h4></a>
+
           <h4 class="regular">Shop</h4>
           <a href="./sign-up.html"><h4 class="regular">Sign Up</h4></a>
         </div>
@@ -33,80 +34,111 @@
         </div>
         <div class="line"></div>
 
-        <div class="featured-news-container">
-          <img src="./images/hwei.jpg" alt="" />
+        <a
+          href="https://www.youtube.com/watch?v=1qGkmv80KD0"
+          class="featured-news-container"
+          id="featured-news-container"
+        >
+          <img id="featured-img" src="./images/hwei.jpg" alt="" />
           <div class="text-container-news">
-            <p>GAME UPDATES</p>
-            <h4>Hwei Champion Spotlight</h4>
-            <h5>
+            <p id="featured-type">GAME UPDATES</p>
+            <h4 id="featured-title">Hwei Champion Spotlight</h4>
+            <h5 id="featured-desc">
               Unlock your artistic potential with the Hwei Champion Spotlight.
             </h5>
-            <h6>2 Days ago</h6>
+            <h6 id="featured-date">2 Days ago</h6>
           </div>
-        </div>
+        </a>
 
         <div class="slider-container">
-            <p>PREVIOUS NEWS</p>
-            <p>NEXT NEWS</p>
-          </div>
+          <p onclick="changeNews(true,false)">PREVIOUS NEWS</p>
+          <p onclick="changeNews(false,true)">NEXT NEWS</p>
+        </div>
+      </div>
 
-          <div class="latest-container">
-            <div class="latest-container-divider">
-              <div class="latest-news">
-                <h1 class="main-title" style="color: white">Latest News</h1>
-              </div>
-            </div>
-            <div class="latest-news-main-container">
-              <div class="latest-news-left">
-                <div class="news-container">
-                  <img src="./images/news-1-edit.png" alt="" />
-                  <div class="text-news-container">
-                    <p>MEDIA</p>
-                    <h4>POP/STAR Performance | Mini Cinematic - TFT</h4>
-                    <h5>
-                      Chibi Headliner K/DA POP/STARS Kai’Sa, Pengu, and Choncc drop
-                      their dance cover of a K/DA classic.
-                    </h5>
-                    <h6>1 hour ago</h6>
-                  </div>
-                </div>
-    
-                <div class="news-container">
-                  <img src="./images/news-2.png" alt="" />
-                  <div class="text-news-container">
-                    <div class="text-news-container">
-                      <p>MEDIA</p>
-                      <h4>Winterblessed 2023</h4>
-                      <h5>Dance in winter’s reverie.</h5>
-                      <h6>1 hour ago</h6>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="news-container">
-                  <img src="./images/news-3.png" alt="" />
-                  <div class="text-news-container">
-                    <div class="text-news-container">
-                      <p>DEV</p>
-                      <h4>Behind the Bop: Steve Aoki Remix Rumble</h4>
-                      <h5>
-                        How Steve Aoki created the genre-defying track for TFT’s
-                        Remix Rumble music video.
-                      </h5>
-                      <h6>7 days ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="latest-news-right">
-                <img src="./images/news-group-1.png" alt="" />
-                <img src="./images/news-group-2.png" alt="" />
-                <img src="./images/news-group-3.png" alt="" />
-                <img src="./images/news-group-4.png" alt="" />
-              </div>
-            </div>
+      <div class="latest-container">
+        <div class="latest-container-divider">
+          <div class="latest-news">
+            <h1 class="main-title" style="color: white">Latest News</h1>
           </div>
+        </div>
+        <div class="latest-news-main-container">
+          <div class="latest-news-left">
+            <a
+              href="https://www.youtube.com/watch?v=hZK6hBWU6lY"
+              class="news-container"
+            >
+              <img src="./images/news-1-edit.png" alt="" />
+              <div class="text-news-container">
+                <p>MEDIA</p>
+                <h4>POP/STAR Performance | Mini Cinematic - TFT</h4>
+                <h5>
+                  Chibi Headliner K/DA POP/STARS Kai’Sa, Pengu, and Choncc drop
+                  their dance cover of a K/DA classic.
+                </h5>
+                <h6>1 hour ago</h6>
+              </div>
+            </a>
 
+            <a
+              href="https://www.youtube.com/watch?v=WiCL7Sg6Abc"
+              class="news-container"
+            >
+              <img src="./images/news-2.png" alt="" />
+              <div class="text-news-container">
+                <div class="text-news-container">
+                  <p>MEDIA</p>
+                  <h4>Winterblessed 2023</h4>
+                  <h5>Dance in winter’s reverie.</h5>
+                  <h6>1 hour ago</h6>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=XXcFQgaamDU"
+              class="news-container"
+            >
+              <img src="./images/news-3.png" alt="" />
+              <div class="text-news-container">
+                <div class="text-news-container">
+                  <p>DEV</p>
+                  <h4>Behind the Bop: Steve Aoki Remix Rumble</h4>
+                  <h5>
+                    How Steve Aoki created the genre-defying track for TFT’s
+                    Remix Rumble music video.
+                  </h5>
+                  <h6>7 days ago</h6>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://merch.riotgames.com/en-us/product/lucian-unlocked/?utm_source=lol&utm_medium=client&utm_campaign=holiday23"
+              class="news-container"
+            >
+              <img src="./images/lucian-news.jpg" alt="" />
+              <div class="text-news-container">
+                <div class="text-news-container">
+                  <p>MERCH</p>
+                  <h4>Lucian Unlocked</h4>
+                  <h5>
+                    Sentinel of Light. Hunter of the undying. Married man.
+                    Unlocked statue. Lucian does it all!
+                  </h5>
+                  <h6>4 days ago</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="latest-news-right">
+            <img src="./images/news-group-1.png" alt="" />
+            <img src="./images/news-group-2.png" alt="" />
+            <img src="./images/news-group-3.png" alt="" />
+            <img src="./images/news-group-4.png" alt="" />
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -117,5 +149,6 @@
       </div>
     </footer>
 
+    <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -52,6 +52,7 @@ body{
     background-color: #18524E;
     display: flex;
     height: 99%;
+    flex-direction: column;
 
     justify-content: center;
     align-items: center;
@@ -224,11 +225,11 @@ select{
     font-family: Causten-Light;
     font-size: 20px;
 }
-.button-container span{
+.button-container a{
     font-family: Causten-SemiBold;
     color: #1877F2;
 }
-.button-container span:hover{
+.button-container a:hover{
     cursor: pointer;
 }
 
