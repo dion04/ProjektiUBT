@@ -1,8 +1,8 @@
 let i = 0;
 let imgArr = [
-  "../images/hwei.jpg",
-  "../images/featured-news-2.jpg",
-  "../images/featured-news-3.jpg",
+  "./images/hwei.jpg",
+  "./images/featured-news-2.jpg",
+  "./images/featured-news-3.jpg",
 ];
 let titleArr = [
   "Hwei Champion Spotlight",
