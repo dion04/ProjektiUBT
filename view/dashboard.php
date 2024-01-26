@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+$password = isset($_SESSION['password']) ? $_SESSION['password'] : "noPass";
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : "noEmail";
+$role = isset($_SESSION['role']) ? $_SESSION['role'] : "noRole";
+if ($role != "A") {
+    echo "You are not an admin!!";
+    return;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,5 +68,6 @@
 
              ?>
     </table>
+
 </body>
 </html>

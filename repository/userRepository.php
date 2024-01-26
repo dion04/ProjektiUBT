@@ -62,6 +62,18 @@ class UserRepository
         return $user;
     }
 
+    function getUserByEmailAndPassword($email, $password)
+    {
+        $conn = $this->connection;
+
+        $sql = "SELECT * FROM users WHERE UserEmail='$email' AND UserPassword='$password'";
+
+        $statement = $conn->query($sql);
+        $user = $statement->fetch();
+
+        return $user;
+    }
+
     function updateUser($id, $name, $surname, $phone, $country, $birthday, $email, $password)
     {
         $conn = $this->connection;
