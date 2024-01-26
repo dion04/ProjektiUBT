@@ -55,6 +55,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (validateForm()) {
     let host = window.location.host;
-    document.location.href = "/sign-in.html";
+    document.location.href = "/dashboard.php";
   }
 });

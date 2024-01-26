@@ -12,19 +12,6 @@ class ChampsRepository
         $this->connection = $conn->startConnection();
     }
 
-
-    function getAllUsers()
-    {
-        $conn = $this->connection;
-
-        $sql = "SELECT * FROM user";
-
-        $statement = $conn->query($sql);
-        $users = $statement->fetchAll();
-
-        return $users;
-    }
-
     function getAllChamps()
     {
         $conn = $this->connection;

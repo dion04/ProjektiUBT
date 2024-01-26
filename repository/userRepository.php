@@ -20,25 +20,29 @@ class UserRepository
         $id = $user->getId();
         $name = $user->getName();
         $surname = $user->getSurname();
+        $phone = $user->getPhone();
+        $country = $user->getCountry();
+        $birthday = $user->getBirthday();
+        $gender = $user->getGender();
         $email = $user->getEmail();
-        $username = $user->getUsername();
         $password = $user->getPassword();
 
-        $sql = "INSERT INTO user (id,name,surname,email,username,password) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO users (UserID,UserName,UserSurname,UserPhone,UserCountry,UserBirthday,UserGender,UserEmail,UserPassword,UserRole) VALUES (?,?,?,?,?,?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$id, $name, $surname, $email, $username, $password]);
+        $statement->execute([$id, $name, $surname, $phone, $country, $birthday, $gender, $email, $password, "U"]);
 
-        echo "<script> alert('User has been inserted successfuly!'); </script>";
+        header("Location: ./sign-in.html");
 
     }
+
 
     function getAllUsers()
     {
         $conn = $this->connection;
 
-        $sql = "SELECT * FROM user";
+        $sql = "SELECT * FROM users";
 
         $statement = $conn->query($sql);
         $users = $statement->fetchAll();
@@ -46,13 +50,11 @@ class UserRepository
         return $users;
     }
 
-    
-
     function getUserById($id)
     {
         $conn = $this->connection;
 
-        $sql = "SELECT * FROM user WHERE id='$id'";
+        $sql = "SELECT * FROM users WHERE UserID='$id'";
 
         $statement = $conn->query($sql);
         $user = $statement->fetch();
@@ -60,15 +62,15 @@ class UserRepository
         return $user;
     }
 
-    function updateUser($id, $name, $surname, $email, $username, $password)
+    function updateUser($id, $name, $surname, $phone, $country, $birthday, $email, $password)
     {
         $conn = $this->connection;
 
-        $sql = "UPDATE user SET name=?, surname=?, email=?, username=?, password=? WHERE id=?";
+        $sql = "UPDATE users SET UserName=?, UserSurname=?, UserEmail=?, UserPhone=?,UserCountry=?,UserBirthday=?, UserPassword=? WHERE UserID=?";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$name, $surname, $email, $username, $password, $id]);
+        $statement->execute([$name, $surname, $email, $phone, $country, $birthday, $password, $id]);
 
         echo "<script>alert('update was successful'); </script>";
     }
@@ -77,7 +79,7 @@ class UserRepository
     {
         $conn = $this->connection;
 
-        $sql = "DELETE FROM user WHERE id=?";
+        $sql = "DELETE FROM users WHERE UserID=?";
 
         $statement = $conn->prepare($sql);
 
