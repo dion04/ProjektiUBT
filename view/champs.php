@@ -40,9 +40,9 @@
       $links = array("https://www.youtube.com/watch?v=GcR1_McnJbU", "https://www.youtube.com/watch?v=SGxQAs9ULWY", "https://www.youtube.com/watch?v=n-KWeg-9GVU", "https://www.youtube.com/watch?v=pK4VLNk7uBc", "https://www.youtube.com/watch?v=fkM20LgOdKQ", "https://www.youtube.com/watch?v=QvNw0A-D0T0", "https://www.youtube.com/watch?v=Y-gsY5oAsL0", "https://www.youtube.com/watch?v=-tNDoXIYptk");
       include_once '../repository/champsRepository.php';
 
-      $userRepository = new ChampsRepository();
+      $champRepository = new ChampsRepository();
 
-      $champs = $userRepository->getAllChamps();
+      $champs = $champRepository->getAllChamps();
       $i = 0;
       foreach ($champs as $champ) {
 
