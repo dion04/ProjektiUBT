@@ -108,10 +108,5 @@ $role = isset($_SESSION['role']) ? $_SESSION['role'] : "noRole";
         </div>
       </div>
     </footer>
-
-
-    <?php
-    echo $email . $role;
-    ?>
   </body>
 </html>

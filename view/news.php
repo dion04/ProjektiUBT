@@ -63,14 +63,14 @@
           </div>
         </div>
         <div class="latest-news-main-container">
-          <div class="latest-news-left">
+          <div id="latest-news-left" class="latest-news-left">
             <?php
             include_once "../repository/newsRepository.php";
             $newsRepository = new NewsRepository();
             $news = $newsRepository->getAllNotFeaturedNews();
             if (isset($_POST['GameUpdatesBtn']) || isset($_POST['EsportsBtn']) || isset($_POST['DevBtn']) || isset($_POST['MediaBtn'])) {
 
-              $news = $newsRepository->getNewsByType(reset($_POST));
+              $news = $newsRepository->getNewsByType(array_shift($_POST));
 
 
               foreach ($news as $news_) {
@@ -86,6 +86,9 @@
                   </div>
                 </a> ";
               }
+
+              echo "<script>window.location.href='news.php#latest-news-left'</script>";
+
             } else {
               foreach ($news as $news_) {
                 echo "<a href='' class='news-container' >
@@ -105,9 +108,9 @@
 
             ?>
           </div>
-          <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="latest-news-right" >
-            <button type="submit" value="GAMEUPDATE" name="GameUpdatesBtn" class="img-type"><img  src="./images/news-group-1.png" alt=""/></button>
-            <button type="submit" value="ESPORT" name="EsportsBtn" class="img-type"><img  src="./images/news-group-2.png" alt=""/></button>
+          <form  method="post" class="latest-news-right" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+            <button type="submit" value="GAME UPDATE" name="GameUpdatesBtn" class="img-type"><img  src="./images/news-group-1.png" alt=""/></button>
+            <button type="submit" value="ESPORTS" name="EsportsBtn" class="img-type"><img  src="./images/news-group-2.png" alt=""/></button>
             <button type="submit" value="DEV" name="DevBtn" class="img-type"><img  src="./images/news-group-3.png" alt=""/></button>
             <button type="submit" value="MEDIA" name="MediaBtn" class="img-type"><img  src="./images/news-group-4.png" alt=""/></button>
           </form>
