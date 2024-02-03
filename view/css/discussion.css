@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #18524E;
+    font-family: inter;
+}
+.container{
+    height: 92.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    background-color: #49656C;
+    width: 80%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+.discussion-nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #1D2A2C;
+}
+.discussion-nav .user-container {
+    margin-left:5%;
+}
+.discussion-nav h3 {
+    margin-right: 5%;
+}
+.discussion-nav h1 {
+    margin-left: -7.5%;
+}
+.user-container{
+    text-align: left;
+}
+.user-container h5{
+    margin-top: -10px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    
+
+}
+.discussion{
+    margin-top: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 70%;
+
+}
+.discussion h1{
+    font-size: 15px;
+}
+.discussion-text{
+    background-color: #4DB6B1;
+    height: auto;
+    width: 1050px !important;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: -20%;
+}
+.discussion-text p{
+    width: 90%;
+    color: white;
+}
+.discussion::-webkit-scrollbar {
+    display: none;
+  }
+.discussion-comment{
+    background-color: #619bb6;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 25px !important;
+    word-wrap: break-word
+
+
+}
+.discussion-comment p{
+    width: 90%;
+    color: white;
+}
+
+
+.discussion-comments{
+    background-color: #4DB6B1;
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    align-items: center;
+    border-radius: 15px;
+}
+textarea {
+    box-sizing: border-box;
+border:none;
+background-color: #F4F5F8;
+resize: none;
+}
+.discussion-comments input{
+    border: none;
+    color: White;
+    padding: 10px 25px;
+    background-color: #1D2A2C;
+    border-radius: 5px;
+
+}
+.discussion-comments p{
+    width: 90%;
+    color: white;
+}

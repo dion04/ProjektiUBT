@@ -12,6 +12,7 @@ if (isset($_POST['signIn'])) {
 
     $_SESSION['password'] = $user['UserPassword'];
     $_SESSION['role'] = $user['UserRole'];
+    $_SESSION['user'] = $user;
     header('Location: index.php');
   } else {
     echo "EMAIL OR PASSWORD INCORRECT";
@@ -28,6 +29,9 @@ if (isset($_POST['signIn'])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <?php
+    include_once './navbar.php';
+    ?>
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/sign-up.css" />
     <style>
@@ -41,23 +45,6 @@ if (isset($_POST['signIn'])) {
     </style>
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img class="img-class" src="./images/logo.png" alt="" />
-          <h4>ATLAS</h4>
-        </div>
-
-        <div class="nav-content">
-          <a href="./index.html"><h4 class="regular">Home</h4></a>
-          <a href="./news.html"><h4 class="regular">News</h4></a>
-          <a href="./champs.html"><h4 class="regular">Champions</h4></a>
-
-          <h4 class="regular">Shop</h4>
-          <a href="./sign-up.html"><h4 class="selected">Sign Up</h4></a>
-        </div>
-      </div>
-    </header>
     <div class="main-container">
       <div class="left-container">
         <div class="image-caption">
@@ -94,7 +81,7 @@ if (isset($_POST['signIn'])) {
         </div>
         <div style="margin-top: 25%" class="button-container">
           <input type="submit" name="signIn" value="Sign In" />
-          <p>Dont have an account? <a href="./sign-up.html">Sign Up</a></p>
+          <p>Dont have an account? <a href="./sign-up.php">Sign Up</a></p>
         </div>
       </form>
     </div>

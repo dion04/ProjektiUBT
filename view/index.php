@@ -17,23 +17,9 @@ $role = isset($_SESSION['role']) ? $_SESSION['role'] : "noRole";
     <link rel="stylesheet" href="./css/navbar.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img class="img-class" src="./images/logo.png" alt="" />
-          <h4>ATLAS</h4>
-        </div>
-
-        <div class="nav-content">
-          <h4 class="selected">Home</h4>
-          <a href="./news.html"><h4 class="regular">News</h4></a>
-          <a href="./champs.html"><h4 class="regular">Champions</h4></a>
-
-          <h4 class="regular">Shop</h4>
-          <a href="./sign-up.html"><h4 class="regular">Sign Up</h4></a>
-        </div>
-      </div>
-    </header>
+  <?php
+  include_once './navbar.php';
+  ?>
 
     <main>
       <div class="main-container">

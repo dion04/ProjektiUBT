@@ -4,29 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
     <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
+    <?php
+    include_once './navbar.php';
+    ?>
     <link rel="stylesheet" href="./css/news.css"/>
   </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img class="img-class" src="./images/logo.png" alt="" />
-          <h4>ATLAS</h4>
-        </div>
-
-        <div class="nav-content">
-          <a href="./index.html"><h4 class="regular">Home</h4></a>
-          <h4 class="selected">News</h4>
-          <a href="./champs.php"><h4 class="regular">Champions</h4></a>
-
-          <h4 class="regular">Shop</h4>
-          <a href="./sign-up.html"><h4 class="regular">Sign Up</h4></a>
-        </div>
-      </div>
-    </header>
-
+  <body style="background-color: white !important;">
     <main>
       <div class="featured-container">
         <div class="title-container-featured">

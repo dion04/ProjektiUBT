@@ -4,28 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <?php
+    include_once './navbar.php';
+    ?>
     <link rel="stylesheet" href="./css/navbar.css" />
 
     <link rel="stylesheet" href="./css/sign-up.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img class="img-class" src="./images/logo.png" alt="" />
-          <h4>ATLAS</h4>
-        </div>
-
-        <div class="nav-content">
-          <a href="./index.html"><h4 class="regular">Home</h4></a>
-          <a href="./news.html"><h4 class="regular">News</h4></a>
-          <a href="./champs.html"><h4 class="regular">Champions</h4></a>
-
-          <h4 class="regular">Shop</h4>
-          <a href="./sign-up.html"><h4 class="selected">Sign Up</h4></a>
-        </div>
-      </div>
-    </header>
+  
     <div class="main-container">
       <div class="left-container">
         <div class="image-caption">
@@ -106,7 +93,7 @@
         </div>
         <div class="button-container">
           <input type="submit" name="signUpBtn" value="Sign Up" />
-          <p>Already have an account? <a href="./sign-in.html">Sign In</a></p>
+          <p>Already have an account? <a href="./sign-in.php">Sign In</a></p>
         </div>
       </form>
       <?php include_once '../controller/registerController.php'; ?>

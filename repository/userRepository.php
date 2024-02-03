@@ -100,9 +100,4 @@ class UserRepository
         echo "<script>alert('delete was successful'); </script>";
     }
 }
-
-//  $userRepo = new UserRepository;
-
-//  $userRepo->updateUser('1111','SSS','SSS','SSS','SSS','SSS');
-
 ?>

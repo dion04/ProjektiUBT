@@ -59,7 +59,7 @@ body{
 }
 .main-container{
     width: 70%;
-    height: 80vh;
+    height: 80vh !important;
     background-color: rgb(223, 217, 217);
     display: flex;
 }

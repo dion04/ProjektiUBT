@@ -1,0 +1,142 @@
+
+.main-container-forum{
+    display: flex;
+
+}
+.navbar-vertical{
+    position: fixed;
+    height: 92.9vh;
+    width: 20vw;
+    background-color: #1D2A2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3.7%;
+}
+.ver-nav-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+.ver-nav-button{
+    border: none;
+    background-color: #428BCA;
+    padding: 15px 35px;
+    font-family: inter;
+    font-size: 15px;
+    color: white;
+}
+.main-body{
+    width: 80vw;
+    margin-left: 20vw;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/forum-background.png") !important;
+    background-size: fill;
+    height: 100vh;
+    align-items: center !important;
+
+}
+
+.user{
+    font-family: inter;
+    color: white;
+    background-color: #4DB6B1;
+    padding: 10px 0px;
+}
+.user *{
+    margin-left: 10%;
+}
+
+.user h4{
+    margin-top: -10px;
+}
+.nav-links{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.nav-link{
+    color: white;
+    font-family: inter-light;
+    width: 81%;
+    border-bottom: solid 1px #4DB6B1;
+    background-color: #1D2A2D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+}
+
+.nav-link h1{
+    font-size: 25px;
+    margin-left: -1.5%;
+}
+.nav-link h4{
+    font-size: 12px;
+    margin-left: -1.5%;
+
+}
+
+.body-container{
+    width: 80%;
+    height: 70%;
+    background-color: #49656C;
+    margin-top: 5%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: inter-light;
+    padding-bottom: 20px;
+}
+.body-container::-webkit-scrollbar {
+    display: none;
+  }
+.body-title{
+    width: 95%;
+    border-bottom: 2px solid #4DB6B1;
+    background-color: #49656C;
+
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.disc-info{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 0;
+    top: 12.5%;
+    background-color: #49656C;
+
+}
+
+.discussion-container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    border-bottom: 2px solid #4DB6B1;
+
+}
+
+header{
+    overflow: hidden;
+     position: fixed;
+     width: 100%;
+}
+.navbar{
+    opacity: 100%;
+
+}
+.body-container{
+    overflow: auto;
+}
+
