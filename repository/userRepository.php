@@ -33,7 +33,7 @@ class UserRepository
 
         $statement->execute([$id, $name, $surname, $phone, $country, $birthday, $gender, $email, $password, "U"]);
 
-        header("Location: ./sign-in.html");
+        header("Location: ./sign-in.php");
 
     }
 

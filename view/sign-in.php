@@ -80,13 +80,13 @@ if (isset($_POST['signIn'])) {
           />
         </div>
         <div style="margin-top: 25%" class="button-container">
-          <input type="submit" name="signIn" value="Sign In" />
+          <input onclick="validateForm()" type="submit" name="signIn" value="Sign In" />
           <p>Dont have an account? <a href="./sign-up.php">Sign Up</a></p>
         </div>
       </form>
     </div>
 
     
-
+    <script src="./js/sign-in.js"></script>
   </body>
 </html>

@@ -20,11 +20,3 @@ const validateForm = () => {
 
   return true;
 };
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  if (validateForm()) {
-    let host = window.location.host;
-    document.location.href = "/index.html";
-  }
-});

@@ -1,6 +1,7 @@
 <?php
 include_once '../repository/commentsRepository.php';
 include_once '../models/comment.php';
+include_once '../repository/userRepository.php';
 
 if (isset($_POST['addComment'])) {
     if (
@@ -14,7 +15,11 @@ if (isset($_POST['addComment'])) {
         $id = rand(100, 100000);
         $comment = new Comment($id, $text, $userID, $discussionID);
         $commentRepository = new CommentsRepository();
+        $userRepository = new UserRepository();
+        $user = $userRepository->getUserById($userID);
+        $commentRepository->changeLatest($user['UserEmail'], $discussionID);
         $commentRepository->insertComment($comment, $discussionID);
+
 
     }
 

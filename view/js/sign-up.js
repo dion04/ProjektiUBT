@@ -26,7 +26,7 @@ const validateForm = () => {
 
   var phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
   if (!phoneRegex.test(phone)) {
-    alert("Please enter a valid phone number! (example: (+1)123456789)");
+    alert("Please enter a valid phone number! (example: (1)123456789)");
     return false;
   }
 
@@ -51,10 +51,3 @@ const validateForm = () => {
 
   return true;
 };
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  if (validateForm()) {
-    let host = window.location.host;
-    document.location.href = "/dashboard.php";
-  }
-});

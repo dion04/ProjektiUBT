@@ -31,7 +31,7 @@ if ($role != "A") {
         </a>
         <div class="nav-links">
             <h1 class="focus">Users</h1>
-            <h1>Shop</h1>
+            <h1>Forum</h1>
             <h1>News</h1>
             <h1>Champs</h1>
         </div>

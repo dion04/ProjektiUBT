@@ -32,7 +32,7 @@ if (isset($_SESSION['user'])) {
           <a href="./news.php"><h4 class="regular">News</h4></a>
           <a href="./champs.php"><h4 class="regular">Champions</h4></a>
 
-          <a href="./shop.php"><h4 class="regular">Shop</h4></a>
+          <a href="./history.php"><h4 class="regular">History</h4></a>
           <?php
           if (isset($user)) {
 

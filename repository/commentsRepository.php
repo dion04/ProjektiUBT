@@ -42,6 +42,15 @@ class CommentsRepository
 
         header("Location: ./discussion.php?id=$discussionID");
     }
+
+    function changeLatest($email, $discussionID)
+    {
+        $conn = $this->connection;
+        $sql = "UPDATE discussion SET DiscussionLatest = '$email' WHERE DiscussionID = $discussionID";
+        $statement = $conn->prepare($sql);
+
+        $statement->execute();
+    }
 }
 
 ?>

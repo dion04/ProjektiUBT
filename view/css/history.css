@@ -1,0 +1,56 @@
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+}
+.content-container{
+    margin-top: 1%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+h1{
+    font-family: Kinetica;
+    font-size: 50px;
+    color: white;
+}
+h3{
+    font-family: Kinetica;
+    font-size: 30px;
+    color: white; 
+    margin-top: 0px;
+}
+p{
+    font-family: inter-light;
+    color: white;
+    font-size: 20px;
+    width: 70%;
+}
+img{
+    width: 70%;
+    height: 450px;
+}
+
+
+
+footer{
+    margin-top: 2%;
+}
+.footer-container{
+    width: 99vw;
+    height: 115px;
+    background-color: #1e2024;
+    display: flex;
+    justify-content: center;
+}
+#img-footer{
+    height: auto !important;
+    width: 200px !important;
+
+}

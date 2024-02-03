@@ -92,11 +92,13 @@
           />
         </div>
         <div class="button-container">
-          <input type="submit" name="signUpBtn" value="Sign Up" />
+          <input onclick="validateForm()" type="submit" name="signUpBtn" value="Sign Up" />
           <p>Already have an account? <a href="./sign-in.php">Sign In</a></p>
         </div>
       </form>
       <?php include_once '../controller/registerController.php'; ?>
     </div>
+
+    <script src="./js/sign-up.js"></script>
   </body>
 </html>
